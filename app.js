@@ -7,13 +7,16 @@ window.addEventListener('load', () => {
         "rgb(235, 64, 12)",
         "rgb(73, 38, 170)",
         "rgb(207, 238, 70)",
-        "rgb(22, 206, 46)",
-        "rgb(20, 19, 19)"
+        "rgb(20, 19, 19)",
+        "rgb(22, 206, 46)"
     ]
 
     pads.forEach((pad, index) => {
         pad.addEventListener("click", () => {
-            pad.style.animation = 'pop 1s ease'
+            pad.style.animation = 'pop 0.3s ease'
+            pad.addEventListener("animationend", function() {
+                pad.style.animation = ''
+            })
             sounds[index].currentTime = 0
             sounds[index].play()
             createBubble(index)

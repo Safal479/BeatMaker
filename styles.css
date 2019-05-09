@@ -50,6 +50,7 @@ body {
     flex: 1;
     width: 100px;
     height: 100px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .pad1 {
@@ -78,16 +79,49 @@ body {
 
 @keyframes jump {
     0% {
-        bottom: 0%;
+        bottom: 50%;
+        left: 10%;
         transform: scaleX(1) scaleY(1);
     }
-    50% {
+    35% {
         bottom: 50%;
-        transform: scaleX(2) scaleY(0.7);
+        left: 50%;
+        transform: scaleX(3) scaleY(0.5);
+    }
+    40% {
+        bottom: 55%;
+        left: 50%;
+        transform: scaleX(3) scaleY(0.5);
+    }
+    45% {
+        bottom: 45%;
+        left: 50%;
+        transform: scaleX(3) scaleY(0.5);
+    }
+    50% {
+        bottom: 55%;
+        left: 50%;
+        transform: scaleX(3) scaleY(0.5);
+    }
+    55% {
+        bottom: 45%;
+        left: 50%;
+        transform: scaleX(3) scaleY(0.5);
+    }
+    60% {
+        bottom: 55%;
+        left: 50%;
+        transform: scaleX(3) scaleY(0.5);
+    }
+    65% {
+        bottom: 50%;
+        left: 50%;
+        transform: scaleX(3) scaleY(0.5);
     }
     100% {
-        bottom: 100%;
-        transform: scaleX(3) scaleY(0.3);
+        bottom: 50%;
+        left: 90%;
+        transform: scaleX(1) scaleY(1);
     }
 }
 
