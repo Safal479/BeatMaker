@@ -27,7 +27,7 @@ window.addEventListener('load', () => {
         const bubble = document.createElement("div")
         bubbles.appendChild(bubble)
         bubble.style.backgroundColor = colors[index]
-        bubble.style.animation = 'jump 1s ease'
+        bubble.style.animation = 'jump 0.4s ease'
         bubble.addEventListener("animationend", function() {
             bubbles.removeChild(this)
         })
